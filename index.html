@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <div id="menu">
+      <input type="button" id="btnInicio" value="inicio" />
+      <input type="button" id="btnIngreso" value="ingreso" />
+      <input type="button" id="btnRegistro" value="registo" />
+      <input type="button" id="btnCerrarSesion" value="cerrar sesion" />
+    </div>
+
+    <div id="inicio">
+      <h1>Bienvenido al taller</h1>
+
+      <div id="divUsuarioLogueado">
+        <table>
+          <thead>
+            <th>Nombres</th>
+            <th>Apellido</th>
+            <th>País</th>
+            <th>Usuario</th>
+          </thead>
+
+          <tbody id="tablaInicioBody"></tbody>
+        </table>
+      </div>
+
+      <div id="divUsuarioDeslogueado">
+        <p>
+          Gracias por formar parte del taller de desarrollo para dispositivos
+          móviles. Por favor, navegue por la aplicación para iniciar sesión o
+          registrarse
+        </p>
+      </div>
+    </div>
+
+    <div id="login">
+      <H4>Login</H4>
+        <label>User</label><br>
+        <input type="text" id="txtLoginUser"><br>
+        <label>Password</label><br>
+        <input type="password" name="" id="txtLoginPass"><br>
+        <input type="button" id="btnLogin" value="login">
+
+    </div>
+
+    <div id="registro">
+      <H4>Registro</H4>
+        <label>Nombre</label><br>
+        <input type="text" id="txtRegistroNombre"><br>
+        <label>Apellido</label><br>
+        <input type="text" id="txtRegistroApellido"><br>
+        <label>Pais</label><br>
+        <select id="slcPais">
+            <option value="ARG">Argentina</option>
+            <option value="BRA">Brasil</option>
+            <option value="UYU">Uruguay</option>
+        </select><br>
+        <label>UsernName</label><br>
+        <input type="text" id="txtRegistroUser"><br>
+        <label>Password</label><br>
+        <input type="text" id="txtRegistroPass"><br>
+        <label>Confirma password</label><br>
+        <input type="text" id="txtRegistroConfirmPass"><br>
+        <input type="button" value="Registrar" id="btnRegistro">
+    </div>
+        
+    
+    <script src="/js/codigo.js"></script>
+    <script src="/js/estructuras.js"></script>
+
+
+  </body>
+</html>
